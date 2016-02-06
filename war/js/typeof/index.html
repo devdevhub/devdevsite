@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<style>
+			body {
+				text-align: center;
+				font: 18px Arial;
+			}
+			ul {
+				list-style: none;
+				display: inline-block;
+				margin-top: 15vw;
+			}
+			li {
+				margin: 0.5vw;
+			}
+		</style>
+		<title>typeof</title>
+	</head>
+	
+	<body>
+		<ul id="values">
+			<li>16.4</li>
+			<li>15</li>
+			<li>"Volvo"</li>
+			<li>"12-12-2015"</li>
+			<li>{a: 1, b: 2}</li>
+			<li>["Piet", "Jan", "Klaas"]</li>
+		</ul>
+		<ul id="typeof">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+	
+	<script src="../../2.1.4_jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var a = 16.4;
+			var b = 15;
+			var c = "Volvo";
+			var d = "12-12-2015";
+			var e = {a: 1, b: 2};
+			var f = ["Piet", "Jan", "Klaas"];
+			
+			$('#typeof li').eq(0).html(typeof a);
+			$('#typeof li').eq(1).html(typeof b);
+			$('#typeof li').eq(2).html(typeof c);
+			$('#typeof li').eq(3).html(typeof d);
+			$('#typeof li').eq(4).html(typeof e);
+			$('#typeof li').eq(5).html(typeof f);
+		});
+	</script>
+</html>

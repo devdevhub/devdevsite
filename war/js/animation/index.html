@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<style>
+			body {
+				text-align: center;
+				background-color: #CCCCCC;
+			}
+			div {
+				position: relative;
+				margin: 10vw 5vw 5vw 5vw;
+				width: 20vw;
+				height: 20vw;
+				display: inline-block;
+				background-color: white;
+			}
+		</style>
+		<title>Animation</title>
+	</head>
+	
+	<body>
+		<p id="clickme">Klik op mij, klik op mij!!!</p>
+		<div id="book"></div>
+	</body>
+		
+	<script src="../../2.1.4_jquery.min.js"></script>
+	<script>
+		$('#clickme').click(function() {
+			$('#book').animate({
+				left: "+=50",
+				height: "toggle"
+			},
+			2000,
+			function() {
+				// Animation complete.
+			});
+		});
+	</script>
+</html>

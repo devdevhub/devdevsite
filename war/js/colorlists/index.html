@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<style>
+			body {
+				margin: 16.5vw;
+				text-align: center;
+				font: 1.5vw Arial, Helvetica, sans-serif;
+			}
+			div {
+				display: inline-block;
+				margin: 2vw;
+			}
+			ul {
+				padding: 0px;
+				list-style: none;
+			}
+		</style>
+		<title>Color Lists</title>
+	</head>
+	
+	<body>
+		<input id="bluefirst" type="button" name="bluefirst" value="The first shall be blue">
+		<br>
+		<div>
+			<ul id="monkeys">
+				<li class="first">Bonobo</li>
+				<li>Chimpanzee</li>
+				<li>Gorilla</li>
+				<li>Orangutan</li>
+			</ul>
+			<input id="redmonkeys" type="button" name="redmonkeys" value="Paint those monkeys red">
+		</div>
+		<div>
+			<ul id="cars">
+				<li class="first">Lamborghini</li>
+				<li>Ferrari</li>
+				<li>Tesla</li>
+				<li>Spyker</li>
+			</ul>
+			<input id="greencars" type="button" name="greencars" value="Paint those cars green">
+		</div>
+	</body>
+		
+	<script src="../../2.1.4_jquery.min.js"></script>
+	<script>
+		$('#bluefirst').click(function() {
+			$('.first').css("color", "blue");
+		});
+		$('#redmonkeys').click(function() {
+			$('#monkeys li').css("color", "red");
+		});
+		$('#greencars').click(function() {
+			$('#cars li').css("color", "green");
+		});
+	</script>
+</html>

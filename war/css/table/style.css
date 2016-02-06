@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+
+body {
+	font: 14px sans-serif;
+}
+
+table {
+	border-collapse: collapse;
+	border: 3px solid black;
+	width: 400px; height: 125px;
+}
+
+td	{
+	border: 1px solid black;
+	text-align: center;
+	width: 100px;
+}
+
+.col_title {
+	font-weight: bold;
+}
+
+.row_title {
+	font-weight: bold;
+	text-align: left;
+	padding: 0px 0px 0px 15px;
+}

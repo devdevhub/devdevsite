@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<style>
+			body {
+				padding-top: 10vw;
+				text-align: center;
+			}
+			ul {
+				width: 20vw;
+				height: 20vw;
+				display: inline-block;
+				list-style: none;
+			}
+		</style>
+		<title>Copy Object</title>
+	</head>
+	
+	<body>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+		
+	<script src="../../2.1.4_jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var ministers = ["Rutte", "Samsom", "Bussemaker"];
+			var copy = [ministers[0], ministers[1], ministers[2]];
+			$('li').eq(0).html(ministers[0]);
+			$('li').eq(1).html(ministers[1]);
+			$('li').eq(2).html(ministers[2]);
+			$('li').eq(3).html(copy[0]);
+			$('li').eq(4).html(copy[1]);
+			$('li').eq(5).html(copy[2]);
+		});
+	</script>
+</html>

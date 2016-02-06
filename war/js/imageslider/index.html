@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<style>
+			body {text-align: center;}
+			div {
+				padding: 0px;
+				margin: 10vw auto 0px;
+				width: 40vw;
+				height: 20vw;
+				overflow: hidden;
+				white-space: nowrap;
+			}
+			img {
+				margin: 0px;
+				display: inline-block;
+				float: none;
+				position: relative;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+		<title>Image Slider</title>
+	</head>
+	
+	<body>
+		<div>
+			<img id="imgCurrent" src="blade.jpg"><img id="imgNext" src="meissie.jpg">
+		</div>
+	</body>
+		
+	<script src="../../2.1.4_jquery.min.js"></script>
+	<script>
+		var imgArray = ["blade.jpg", "meissie.jpg", "meissie2.jpg"];
+		var index = 0;
+		$('#imgCurrent').click(function() {
+			index++;
+			$('img').animate(
+				{"left": "-100%"},
+				1000,
+				function() {
+					$('#imgCurrent').attr('src', imgArray[index%imgArray.length]);
+					$('#imgNext').attr('src', imgArray[(index+1)%imgArray.length]);
+					$('img').css("left", "initial");
+				}
+			);
+		});
+	</script>
+</html>

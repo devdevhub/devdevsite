@@ -1,0 +1,127 @@
+@CHARSET "UTF-8";
+
+* {margin: 0px; padding: 0px;}
+
+background {
+	width: 100vw;
+	height: 100vh;
+	background: url('GrassHD.png') no-repeat fixed bottom;
+	background-size: 100vw 50vw;
+	z-index: -2;
+}
+
+h1 {
+	position: relative;
+	top: 5vh;
+	text-align: center;
+	font: bold 3.75vw Arial, Helvetica, sans-serif;
+}
+
+nav {
+	position: relative;
+	top: 7.5vh;
+	width: 100vw;
+	height: 4.5vw;
+	background-color: #008000;
+	text-align: center;
+}
+nav li {
+	display: inline-block;
+	width: 20vw;
+	color: #FFFFFF;
+	font: 3.5vw Arial, Helvetica, sans-serif;
+}
+#content {
+	display: initial !important;
+	top: 12vh;
+	text-align: center;
+}
+h2 {font: 5vw Arial, Helvetica, sans-serif;}
+p {font: 3vw Arial, Helvetica, sans-serif;}
+
+#dropdown {
+	display: inline-block;
+	margin-bottom: 5vw;
+	position: relative;
+	left: 20vw;
+	top: 12vh;
+	width: 60vw;
+	text-align: center;
+	font: 5vw Arial, Helvetica, sans-serif;
+}
+ul {
+	display: inline-block;
+	list-style-type: none;
+	width: 100%;
+}
+img:not(#githubLogo) {
+	width: 1em;
+	height: 1em;
+	visibility: hidden;
+	float: right;
+	margin-top: 0.075em;
+	position: absolute;
+	right: 1vw;
+	z-index: -1;
+}
+img#githubLogo {
+	width: 1em;
+	height: 1em;
+	position: relative;
+	top: 0.15em;
+}
+.menu, .submenu {
+	display: none;
+	font-size: 3.5vw;
+}
+.menu {
+	max-height: 45vh;
+	overflow-y: auto;
+}
+.submenu {
+	font-size: 2vw;
+}
+a:not(.contact-link) {
+	color: #000000;
+	text-decoration: none;
+}
+.contact-link {
+	color: #008000 !important;
+}
+nav li a {
+	width: 100%;
+	display: inline-block;
+	color: #FFFFFF !important;
+	text-decoration: none;
+}
+#dockButton {
+	display: inline-block;
+	width: 1.5vw;
+	height: 100%;
+	position: absolute;
+	left: 105%;
+	top: 0px;
+}
+
+/*** iframe ***/
+#iframe {
+	display: none;
+	width: 45vw;
+	height: 60vh;
+	position: absolute;
+	right: 7vw;
+	top: 17vh;
+	text-align: center;
+	overflow: visible !important;
+}
+h2#iframeTitle {
+	font: bold 5vw Arial, Helvetica, sans-serif;
+	margin-bottom: 1vw;
+}
+iframe {
+	display: inline-block;
+	width: 95%;
+	height: 100%;
+	border: 0.15625vw solid black;
+	border-radius: 5px;
+}

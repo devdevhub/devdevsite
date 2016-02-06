@@ -1,0 +1,198 @@
+@CHARSET "UTF-8";
+
+* {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font: bold 18px "Arial";
+}
+#pageWrapper {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+/*** FORM ELEMENTS ***/
+form {
+	margin-left: 25px;
+	text-align: center;
+	position: fixed;
+	padding-top: 125px;
+}
+#sliderWrapper {
+	display: inline-block;
+	position: absolute;
+	left: 8vw;
+	top: 0px;
+	width: 80vw;
+	height: 100vh;
+	z-index: 3;
+}
+#sliderOpaque {
+	width: 100%;
+	height: 50px;
+	background-color: #FFFFFF;
+	z-index: 2;
+}
+#slider {
+	z-index: 3;
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	top: 50px;
+	width: 100%;
+	height: 16px;
+	border: 1px solid black;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	background-color: #DDDDDD;
+}
+#min, #max {
+	display: inline-block;
+	position: relative;
+	bottom: 6px;
+	width: 20px;
+	height: 24px;
+	border: 1px solid black;
+	border-radius: 4px;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 45%, #FFFFFF 50%, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0) 100%), linear-gradient(to bottom, #FFFFFF 0%, #333333 15%, #333333 75%, #000000 100%);
+}
+#min {
+	float: left;
+}
+#max {
+	float: right;
+}
+#mid {
+	position: absolute;
+	display: inline-block;
+	z-index: -2;
+	width: 100%;
+	float: left;
+	left: 0px;
+	height: 16px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#mid div {
+	display: inline-block;
+	z-index: -2;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	white-space: nowrap;
+}
+#mid div:nth-of-type(1) {
+	float: left;
+	left: 0px;
+	height: 100%;
+	background: linear-gradient(to bottom, #FFFFFF 0%, #EE0022 35%, #EE0022 50%, #000000 100%);
+}
+#mid div:nth-of-type(2) {
+	z-index: -1;
+	position: relative;
+	float: right;
+	left: 100%;
+	height: 100%;
+	background-color: #DDDDDD;
+}
+#minLabel, #maxLabel {
+	display: inline;
+}
+
+#min, #max, #minLabel, #maxLabel, label {
+	cursor: pointer;
+	position: relative;
+	z-index: 7;
+}
+.carNote {
+	display: inline-block;
+	width: 4px;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(255, 255, 0, 0.5);
+	z-index: 12;
+	pointer-events: none;
+}
+input[type="text"] {
+	max-width: 175px;
+	margin: 0px 10px;
+	text-align: center;
+	border: none;
+	font-size: 16px;
+}
+input[type="checkbox"]{
+	display: none;
+}
+input[type="checkbox"] + label {
+	position: relative;
+	display: block;
+	width: 100%;
+	margin: 2px 0px;
+	z-index: 10;
+}
+input[type="checkbox"]:checked + label {
+	background-color: rgba(0, 0, 0, 0.125);
+}
+#allBrandsWrapper {
+	height: 60vh;
+	overflow-y: auto;
+}
+.carBrandLabel {
+	font-weight: normal;
+}
+input[type="submit"] {
+	display: none;
+}
+#error {
+	color: red;
+	font-size: 14px;
+}
+
+/*** CARS OVERVIEW ***/
+#carsWrapper {
+	padding-top: 125px;
+	margin-left: 250px;
+	display: flex;
+	flex-flow: row wrap;
+}
+.car {
+	width: 275px;
+	height: 140px;
+	border: 2px solid black;
+	border-radius: 10px;
+	margin: 10px;
+}
+.carTitle {
+	height: 22px;
+	text-align: center;
+	color: white;
+	background-color: #800000;
+	border-radius: 10px 10px 0px 0px;
+}
+.carBody {
+	background: linear-gradient(to right, #7F7F7F 0%, #F9F9F9 100%);
+	border-radius: 0px 0px 10px 10px;
+	width: 275px;
+	height: 118px;
+	color: #800000;
+}
+img {
+	width: 145px;
+	height: 90px;
+	text-align: left;
+	margin-top: 28px;
+	border-radius: 0px 0px 0px 10px;
+}
+.price {
+	float: right;
+	margin: 28px 10px 0px 0px;
+	font-size: 16px;
+}

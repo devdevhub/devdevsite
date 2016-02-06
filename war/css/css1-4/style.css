@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+
+ul {
+	list-style-type: none;
+	text-align: center;
+	width: 200px;
+	margin: 15vw auto;
+	font: 40px Arial, Helvetica, sans-serif;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+li:hover {
+	background-color: rgba(0, 0, 0, 0.075);
+}

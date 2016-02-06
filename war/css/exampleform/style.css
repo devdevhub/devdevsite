@@ -1,0 +1,145 @@
+@CHARSET "UTF-8";
+
+* {
+	font-family: sans-serif;
+	color: #5F7D99;
+}
+
+h1 {
+	font-size: 2.5vw;
+	color: #000000;
+	margin: 2.25vw 4.4vw 1vw 4.4vw;
+}
+
+div#table {
+	display: table;
+	width: 90vw;
+}
+div.column {
+	float: left;
+	margin: 0vh 4vw;
+}
+div.column#left label {
+	margin-right: 1vw;
+}
+div.column#right {
+	position: absolute;
+	right: 12.5vw;
+	top: 5.5vw;
+}
+div.row {
+	display: table-row;
+}
+div.cell {
+	display: table-cell;
+	font-size: 1.75vw;
+	line-height: 200%;
+	padding: 0.5vw 0.4vw;
+}
+
+input, textarea, select {
+	border: 0.3vw solid #E2EDF7;
+	font-size: 1.25vw;
+	padding-left: 0.75vw;
+}
+[type="text"] {
+	width: 25vw; height: 2.25vw;
+}
+span.radio:nth-of-type(2) {
+	position: relative;
+	left: 2.5vw;
+}
+div.radiobutton {
+	border-radius: 100vw;
+}
+[type="radio"], [type="checkbox"] {
+	width: 3vw; height: 3vw;
+	margin: 0px;
+	transform: translate(-0.45vw, -0.45vw);
+	opacity: 0;
+}
+div.radiobutton, div.checkbox {
+	display: inline-block;
+	border: 0.175vw solid #AFCEEA;
+	padding: 0px;
+	width: 2vw; height: 2vw;
+	background-color: #CEE1F2;
+	position: relative;
+	top: 0.475vw;
+	transform: translate(-0.45vw, 1vw);
+}
+span.radio * {
+	display: inline-block;
+}
+div.checkbox, div.radiobutton {
+	transform: translate(-3.675vw, -0.85vw);
+	z-index: -1;
+}
+[type="checkbox"], [type="radio"], div.checkbox, div.radiobutton {
+	position: relative;
+	left: 0.5vw; top: 1.25vw;
+}
+[type="radio"]:checked + div.radiobutton {
+	background: #CEE1F2 url("radio.png") no-repeat;
+	background-size: 100%;
+}
+[type="checkbox"]:checked + div.checkbox {
+	background: #CEE1F2 url("check.png") no-repeat;
+	background-size: 100%;
+}
+div.checkbox + label, div.radiobutton + label {
+	position: relative;
+	left: -2.5vw;
+}
+select, [type="date"] {
+	background: url("select.png") no-repeat;
+	background-size: cover;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+select {
+	width: 19.725vw; height: 2.6615vw;
+}
+div#gebdatumrow * {
+	margin-top: 0.75vw;
+}
+[type="date"] {
+	width: 18.5vw; height: 2.25vw;
+}
+::-webkit-inner-spin-button {
+	display: none;
+}
+::-webkit-calendar-picker-indicator {
+	width: 0.45vw;
+	border: 0.75vw solid;
+	opacity: 0;
+}
+::-webkit-clear-button {
+	position: relative;
+	left: -0.625vw;
+}
+div#textarearow label {
+	position: relative; bottom: 12.25vw;
+}
+div#textarearow textarea {
+	margin-top: 1.75vw;
+	padding: 0.5vw 0.75vw;
+	width: 35vw; height: 12.5vw;
+	resize: none;
+}
+label#etenlabel {
+	margin-right: 1.5vw;
+}
+div#buttons {
+	height: 34.25vw;
+}
+#buttons * {
+	margin: 0px 0.5vw;
+	color: #335C82;
+	font-size: 1.25vw;
+	font-weight: bold;
+	position: relative; top: 90%;
+	width: 9vw; height: 2.15vw;
+	background: linear-gradient(#CEE1F2 45.5%, #9FC5E8 54.5%);
+}

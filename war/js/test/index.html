@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>jQuery Test</title>
+	</head>
+	
+	<body>
+		<h1>This text will be overriden.</h1>
+	</body>
+
+	<script src="../../2.1.4_jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('h1').html("hello world");
+		});
+	</script>
+</html>

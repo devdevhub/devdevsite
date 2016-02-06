@@ -1,0 +1,26 @@
+application: develirium-php
+version: 1
+runtime: php55
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /
+  script: main.php
+- url: /test
+  script: test.php
+
+- url: /helloworld
+  script: helloworld/index.php
+- url: /errormessage
+  script: errormessage/index.php
+- url: /busride
+  script: busride/index.php
+- url: /christmastree
+  script: christmastree/index.php
+- url: /whiletoforloop
+  script: whiletoforloop/index.php

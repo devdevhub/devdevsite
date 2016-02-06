@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<style>
+			body {
+				text-align: center;
+				background-color: #CCCCCC;
+				font: 14px Arial;
+			}
+			div {
+				position: relative;
+				margin: 150px 50px 50px 50px;
+				width: 250px;
+				height: 1em;
+				display: inline-block;
+				background-color: white;
+			}
+		</style>
+		<title>Javascript Variables</title>
+	</head>
+	
+	<body>
+		<form>
+			<label>Check if input is between 0 and 10: </label>
+			<input type="text" id="input" name="input" value="">
+			<input type="button" value="Check" onclick="check()">
+		</form>
+		<div id="demo"></div>
+	</body>
+	
+	<script src="../../2.1.4_jquery.min.js"></script>
+	<script>
+		function check() {
+			var x = $('#input').val();
+			var text = "";
+			
+			if (x > 0 && x <= 10) {
+				text = "Input OK";
+			}
+			else {
+				text = "Input not valid";
+			}
+			$('#demo').html(text);
+		}
+	</script>
+</html>

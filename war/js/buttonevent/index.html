@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Button Event</title>
+	</head>
+	
+	<body>
+		<input id="hide" type="button" name="hide" value="hide">
+		<p>First Paragraph</p>
+		<p>Second Paragraph</p>
+	</body>
+		
+	<script src="../../2.1.4_jquery.min.js"></script>
+	<script>
+		$('#hide').click(function() {
+			$('p').slideUp();
+		});
+	</script>
+</html>
