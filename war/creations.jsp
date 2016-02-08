@@ -40,7 +40,7 @@
 			<ul>
 			
 				<!-- GITHUB LINK -->
-				<li id="github"><a target="_blank" href="http://github.com/2025989/">GitHub<img id="githubLogo" src="GitHub-Mark.png" alt="GitHub Logo"></a></li>
+				<li id="github"><a target="_blank" href="http://github.com/devdevhub/">GitHub<img id="githubLogo" src="GitHub-Mark.png" alt="GitHub Logo"></a></li>
 				
 				<!-- APPLICATIONS -->
 				<!-- <li id="apps">Applications<img src="openMenuArrow.png" alt=""></li>
