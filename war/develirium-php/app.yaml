@@ -7,13 +7,25 @@ threadsafe: yes
 handlers:
 - url: /favicon\.ico
   static_files: favicon.ico
-  upload: favicon\.ico
+  upload: favicon\.ico\
+  
+    
+# Serve images as static resources.
+- url: /*/(.+\.(gif|png|jpg))$
+  static_files: */\1
+  upload: .+\.(gif|png|jpg)$
+  application_readable: true
 
+# Serve php scripts.
+- url: /(.+\.php)$
+  script: \1
+
+  
 - url: /
   script: main.php
 - url: /test
   script: test.php
-
+  
 - url: /helloworld
   script: helloworld/index.php
 - url: /errormessage
@@ -24,3 +36,7 @@ handlers:
   script: christmastree/index.php
 - url: /whiletoforloop
   script: whiletoforloop/index.php
+- url: /swimmingclubs
+  script: swimmingclubs/index.php
+- url: /hairdressersanders
+  script: hairdressersanders/index.php

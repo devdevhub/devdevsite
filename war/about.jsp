@@ -40,8 +40,8 @@
 			<h2>It's all about programming.</h2>
 			<br><br>
 			<p>
-				I'm currently working with Java, HTML, CSS, Javascript, JSP and SQL.<br>
-				I'd also like to delve into C++, Ruby, Perl, PHP, ASP, Android, and many more languages! 
+				I'm currently working with Java, HTML, CSS, Javascript, JSP, PHP, Android and SQL.<br>
+				I'd also like to delve into C++, Ruby, Perl, Python, ASP, and many more languages! 
 			</p>
 		</div>
 	</body>
