@@ -4,7 +4,7 @@
 	<head>
 		<style>
 			body {
-				margin-top: 15vh;
+				margin-top: 50px;
 				text-align: center;
 				font: 2vw "Arial";
 			}
