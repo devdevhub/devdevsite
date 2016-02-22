@@ -16,25 +16,11 @@ handlers:
   application_readable: true
 
 # Serve php scripts.
-- url: /(.+\.php)$
-  script: \1
-  
 - url: /
   script: main.php
 - url: /test
   script: test.php
-  
-- url: /helloworld
-  script: helloworld/index.php
-- url: /errormessage
-  script: errormessage/index.php
-- url: /busride
-  script: busride/index.php
-- url: /christmastree
-  script: christmastree/index.php
-- url: /whiletoforloop
-  script: whiletoforloop/index.php
-- url: /swimmingclubs
-  script: swimmingclubs/index.php
-- url: /hairdressersanders
-  script: hairdressersanders/index.php
+- url: /(.+\.php)$
+  script: \1
+- url: /(.+)
+  script: \1/index.php
