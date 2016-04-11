@@ -10,7 +10,7 @@ $(document).ready(function() {
 	
 	/*** RANGE SLIDER ***/
 	$('#min').css("left", "0");
-	$('#max').css("left", "1100");
+	$('#max').css("left", "initial");
 	$('#mid div').eq(1).css("display", "none");
 	var $draggingMin = null;
 	var $draggingMax = null;

@@ -57,6 +57,9 @@
 						if($klantnaam == "") {
 							print("<option>".$tijdstip."</option>");
 						}
+						else {
+							print("<option disabled>".$tijdstip."</option>");
+						}
 					}
 				?>
 			</select>

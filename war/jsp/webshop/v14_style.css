@@ -107,7 +107,7 @@ form {
 	display: inline;
 }
 
-#min, #max, #minLabel, #maxLabel, label {
+#min, #max, #addCar, #minLabel, #maxLabel, label {
 	cursor: pointer;
 	position: relative;
 	z-index: 7;

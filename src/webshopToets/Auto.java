@@ -2,10 +2,14 @@ package webshopToets;
 
 public class Auto {
 	
-	private final String merk;
-	private final String type;
-	private final double prijs;
-	private final String fotoURL;
+	private String merk;
+	private String type;
+	private double prijs;
+	private String fotoURL;
+	
+	public Auto() {
+		
+	}
 	
 	public Auto(String merk, String type, double prijs, String fotoURL) {
 		this.merk = merk;
@@ -28,6 +32,19 @@ public class Auto {
 	
 	public String getFoto() {
 		return fotoURL;
+	}
+
+	public void setMerk(String merk) {
+		this.merk = merk;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public void setPrijs(double prijs) {
+		this.prijs = prijs;
+	}
+	public void setFotoURL(String fotoURL) {
+		this.fotoURL = fotoURL;
 	}
 	
 }

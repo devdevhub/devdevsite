@@ -1,5 +1,4 @@
 <%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
 
 <html>
 	<head>
@@ -39,6 +38,7 @@
 						</div>
 					</div>
 				</div>
+				<a id="addCar" href="addcar.jsp">Add car</a><br><br>
 				<p id="minLabel">Minimum price</p><br>
 				<input type="hidden" name="minHidden" value="0">
 				<input type="text" name="min" value="" readonly>

@@ -4,10 +4,12 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
+import javax.servlet.ServletException;
 import javax.servlet.http.*;
 
 import webshopToets.MoneyFormat;
 import webshopToets.Auto;
+import webshopToets.AutoIO;
 import webshopToets.AutoLijst;
 
 @SuppressWarnings("serial")
@@ -16,13 +18,28 @@ public class X2025989Servlet extends HttpServlet {
 	AutoLijst list = new AutoLijst();
 	MoneyFormat mf = new MoneyFormat();
 	PrintWriter out;
+	AutoIO io;
 	
-	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		out = response.getWriter();
 		doPost(request, response);
 	}
 	
-	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+		
+		if (request.getParameter("addCar") != null) {
+			io = new AutoIO();
+			io.updateCar(
+				request.getParameter("brand"),
+				request.getParameter("model"),
+				Double.parseDouble(request.getParameter("price")),
+				request.getParameter("photoURL")
+			);
+			list.updateLijst();
+			request.getRequestDispatcher("v14_index.jsp").forward(request, response);
+		}
+		
+//		list = io.getCarArray();
 		out = response.getWriter();
 		String checkList = "";
 		ArrayList<String> checkArray = new ArrayList<String>();
