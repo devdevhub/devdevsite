@@ -129,6 +129,7 @@
 								<li><a target="display" href="./jsp/highestlowestnumber/index.jsp">Highest &amp; Lowest Number</a></li>
 								<li><a target="display" href="./jsp/temperatureconversion/index.jsp">Temperature Conversion</a></li>
 								<li><a target="display" href="./jsp/calculator/index.jsp">Calculator</a></li>
+								<li><a target="_blank" href="./jsp/webshop/v14_index.jsp">Webshop</a></li>
 							</ul>
 						</li>
 					</ul>

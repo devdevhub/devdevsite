@@ -93,7 +93,7 @@ form {
 	float: left;
 	left: 0px;
 	height: 100%;
-	background: linear-gradient(to bottom, #FFFFFF 0%, #EE0022 35%, #EE0022 50%, #000000 100%);
+	background: linear-gradient(to bottom, #FFFFFF 0%, #00EE22 35%, #00EE22 50%, #000000 100%);
 }
 #mid div:nth-of-type(2) {
 	z-index: -1;
@@ -174,7 +174,7 @@ input[type="submit"] {
 	height: 22px;
 	text-align: center;
 	color: white;
-	background-color: #800000;
+	background-color: #80DD00;
 	border-radius: 10px 10px 0px 0px;
 }
 .carBody {
@@ -195,4 +195,5 @@ img {
 	float: right;
 	margin: 28px 10px 0px 0px;
 	font-size: 16px;
+	color: #009955;
 }
